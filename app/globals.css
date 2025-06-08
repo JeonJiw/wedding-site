@@ -1,26 +1,19 @@
-@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap");
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@font-face {
+  font-family: "FrutillaScript";
+  src: url("/fonts/FrutillaScript.woff") format("woff");
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+@font-face {
+  font-family: "StellaWilson";
+  src: url("/fonts/StellaWilson.woff") format("woff");
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  @apply bg-white text-black font-josefin;
 }
