@@ -1,14 +1,18 @@
 export default function Navbar() {
   return (
-    <nav className="w-full py-4 px-8 flex justify-between items-center text-sm tracking-wide">
-      <div className="font-[Great_Vibes] text-2xl">Jiwon & Emil</div>
-      <div className="space-x-6 uppercase">
-        <a href="#wedding-party">Wedding Party</a>
-        <a href="#schedule">Schedule</a>
-        <a href="#info">Information</a>
-        <a href="#registry">Registry</a>
-        <a href="#save">Save the Date</a>
-      </div>
+    <nav className="fixed top-0 left-0 w-full bg-white shadow z-50 py-4 px-6 flex justify-center gap-8 font-josefin text-base tracking-wide text-gray-800">
+      <a href="#gallery" className="hover:underline underline-offset-4">
+        Gallery
+      </a>
+      <a href="#wedding-day" className="hover:underline underline-offset-4">
+        Wedding Day Gallery
+      </a>
+      <a href="#schedule" className="hover:underline underline-offset-4">
+        Schedule
+      </a>
+      <a href="#rsvp" className="hover:underline underline-offset-4">
+        RSVP
+      </a>
     </nav>
   );
 }

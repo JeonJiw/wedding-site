@@ -3,7 +3,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        josefin: ['"JosefinSans"', "sans-serif"],
+        josefin: ['"Josefin Sans"', "sans-serif"],
         frutilla: ['"FrutillaScript"', "cursive"],
         stella: ['"StellaWilson"', "cursive"],
       },
